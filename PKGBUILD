@@ -2,13 +2,14 @@ pkgbase=eniac-applications-meta
 pkgname=(eniac-applications-meta
          eniac-applications-x-meta)
 pkgver=0.1
-pkgrel=1
+pkgrel=2
 arch=(any)
 
 package_eniac-applications-meta() {
   depends=(alsa-utils
            android-tools
            android-udev
+           arch-install-scripts
            aria2
            bind-tools
            binwalk
@@ -50,6 +51,7 @@ package_eniac-applications-meta() {
            ripgrep
            rsync
            schedtool
+           smartmontools
            strace
            stunnel
            time
