@@ -2,7 +2,7 @@ pkgbase=eniac-applications-meta
 pkgname=(eniac-applications-meta
          eniac-applications-x-meta)
 pkgver=0.1
-pkgrel=2
+pkgrel=3
 arch=(any)
 
 package_eniac-applications-meta() {
@@ -72,7 +72,6 @@ package_eniac-applications-x-meta() {
            arc-gtk-theme
            arc-icon-theme
            chromium
-           dmenu
            firefox
            geany
            gimp
@@ -83,6 +82,7 @@ package_eniac-applications-x-meta() {
            libreoffice-still
            maim
            mpv
+           rofi
            sxiv
            tk
            ttf-inconsolata
