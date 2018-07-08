@@ -98,6 +98,7 @@ package_eniac-applications-x-meta() {
            xterm
            zathura-pdf-poppler)
   optdepends=('playerctl: media player controller'
+              'rofi-dmenu: Symlink for using Rofi as a drop-in replacement to dmenu'
               'spacefm-gtk2: file manager'
               'sxiv-rifle: sxiv helper'
               'terminator-gtk3-bzr: terminal emulator'
