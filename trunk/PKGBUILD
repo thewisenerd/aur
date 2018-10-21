@@ -22,19 +22,19 @@ makedepends=('mesa' 'python-docutils' 'ladspa' 'wayland-protocols'
              'ffnvcodec-headers' 'vulkan-headers')
 optdepends=('youtube-dl: for video-sharing websites playback')
 options=('!emptydirs')
-source=("$pkgname-$pkgver.tar.gz::https://github.com/mpv-player/$pkgname/archive/v$pkgver.tar.gz"
+source=("$pkgname"::'git+https://github.com/thewisenerd/mpv.git'
         "https://waf.io/waf-${_waf_version}")
-sha256sums=('f9f9d461d1990f9728660b4ccb0e8cb5dce29ccaa6af567bec481b79291ca623'
+sha256sums=('SKIP'
             '2a8e0816f023995e557f79ea8940d322bec18f286917c8f9a6fa2dc3875dfa48')
 
 prepare() {
-  cd ${pkgname}-${pkgver}
+  cd ${pkgname}
 
   install -m755 "${srcdir}"/waf-${_waf_version} waf
 }
 
 build() {
-  cd ${pkgname}-${pkgver}
+  cd ${pkgname}
 
   ./waf configure --prefix=/usr \
     --confdir=/etc/mpv \
@@ -51,7 +51,7 @@ build() {
 }
 
 package() {
-  cd ${pkgname}-${pkgver}
+  cd ${pkgname}
 
   ./waf install --destdir="$pkgdir"
 
