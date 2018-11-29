@@ -2,7 +2,7 @@ pkgbase=eniac-applications-meta
 pkgname=(eniac-applications-meta
          eniac-applications-x-meta)
 pkgver=0.1
-pkgrel=3
+pkgrel=4
 arch=(any)
 
 package_eniac-applications-meta() {
@@ -18,14 +18,12 @@ package_eniac-applications-meta() {
            cpio
            dos2unix
            dosfstools
-           efibootmgr
            exiv2
            ffmpeg
            fish
            fortune-mod
            git
            go
-           grub
            hashdeep
            hdparm
            htop
