@@ -101,7 +101,7 @@ package_eniac-applications-x-meta() {
               'sxiv-rifle: sxiv helper'
               'terminator-gtk3-bzr: terminal emulator'
               'ttf-emojione: emoji font'
-              'ttf-ms-fonts: ttf fonts from msft'
+              'ttf-ms-win10: Microsoft Windows 10 TrueType fonts'
               'ttf-opensans: sans-serif from google'
               'xorg-xprop: Property displayer for X'
               'zathura-cb: comic book support to zathura'
