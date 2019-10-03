@@ -1,0 +1,7 @@
+# eniac-applications-meta
+
+```sh
+makepkg -f
+# sudo pacman -U eniac-applications-meta-<pkgver>-<pkgrel>-any.tar.xz
+# sudo pacman -U eniac-applications-x-meta-<pkgver>-<pkgrel>-any.tar.xz
+```
