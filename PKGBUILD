@@ -2,7 +2,7 @@ pkgbase=eniac-applications-meta
 pkgname=(eniac-applications-meta
          eniac-applications-x-meta)
 pkgver=0.1
-pkgrel=4
+pkgrel=5
 arch=(any)
 
 package_eniac-applications-meta() {
@@ -67,6 +67,7 @@ package_eniac-applications-meta() {
 
 package_eniac-applications-x-meta() {
   depends=(adobe-source-han-serif-otc-fonts
+           alacritty
            arc-gtk-theme
            arc-icon-theme
            chromium
