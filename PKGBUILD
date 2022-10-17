@@ -1,12 +1,13 @@
 pkgbase=eniac-applications-meta
 pkgname=(eniac-applications-meta
-         eniac-applications-x-meta)
+         eniac-applications-x-meta
+         eniac-applications-plasma-meta)
 pkgver=0.1
-pkgrel=5
+pkgrel=9
 arch=(any)
 
 package_eniac-applications-meta() {
-  depends=(alsa-utils
+  depends=(amd-ucode
            android-tools
            android-udev
            arch-install-scripts
@@ -18,74 +19,70 @@ package_eniac-applications-meta() {
            cpio
            dos2unix
            dosfstools
+           ethtool
            exiv2
+           expac
            ffmpeg
            fish
            fortune-mod
+           fzf
            git
            go
            hashdeep
            hdparm
            htop
+           inetutils
            iotop
            iptraf-ng
            jq
+           linux
+           linux-firmware
            lsof
+           man-db
            mediainfo
            mktorrent
            mosh
-           ntfs-3g
+           nano
+           netctl
+           nvidia
            openssh
            p7zip
            pass
-           pptpclient
            pwgen
            python
-           python2
-           python2-pip
-           python-pip
            rclone
+           refind
            repo
            ripgrep
            rsync
            schedtool
            smartmontools
            strace
-           stunnel
            time
            tmux
            tor
            udisks2
            unrar
            unzip
+           usbutils
            wget
-           wpa_supplicant
            xdelta3
+           yay
            zip)
-  optdepends=('apulse: PulseAudio emulation for ALSA')
 }
 
 package_eniac-applications-x-meta() {
   depends=(adobe-source-han-serif-otc-fonts
            alacritty
-           arc-gtk-theme
-           arc-icon-theme
            chromium
            firefox
-           geany
            gimp
-           gnome-themes-extra
-           gsettings-desktop-schemas
-           gtk2
-           gtk-engine-murrine
            libreoffice-still
-           maim
            mpv
            rofi
-           sxiv
-           tk
            ttf-inconsolata
            ttf-indic-otf
+           ttc-iosevka-ss04
            vlc
            xbindkeys
            xclip
@@ -97,14 +94,29 @@ package_eniac-applications-x-meta() {
            xterm
            zathura-pdf-poppler)
   optdepends=('playerctl: media player controller'
-              'rofi-dmenu: Symlink for using Rofi as a drop-in replacement to dmenu'
-              'spacefm-gtk2: file manager'
-              'sxiv-rifle: sxiv helper'
-              'terminator-gtk3-bzr: terminal emulator'
-              'ttf-emojione: emoji font'
-              'ttf-ms-win10: Microsoft Windows 10 TrueType fonts'
-              'ttf-opensans: sans-serif from google'
-              'xorg-xprop: Property displayer for X'
-              'zathura-cb: comic book support to zathura'
-              'zathura-djvu: DjVu support for zathura')
+              'rofi-dmenu: Symlink for using Rofi as a drop-in replacement to dmenu')
+}
+
+package_eniac-applications-plasma-meta() {
+  depends=(plasma-desktop
+
+           # audio
+           pipewire
+           pipewire-pulse
+           pipewire-alsa
+           plasma-pa
+           wireplumber
+           konsole
+
+           # files
+           dolphin
+           ffmpegthumbs
+           kdegraphics-thumbnailers
+           okular
+           kate
+
+           # printer
+           print-manager
+           cups
+           system-config-printer)
 }
