@@ -3,7 +3,7 @@ pkgname=(eniac-applications-meta
          eniac-applications-x-meta
          eniac-applications-plasma-meta)
 pkgver=0.1
-pkgrel=9
+pkgrel=10
 arch=(any)
 
 package_eniac-applications-meta() {
@@ -23,20 +23,24 @@ package_eniac-applications-meta() {
            exiv2
            expac
            ffmpeg
+           fio
            fish
            fortune-mod
            fzf
            git
            go
            hashdeep
+           hddtemp
            hdparm
            htop
            inetutils
            iotop
+           iperf3
            iptraf-ng
            jq
            linux
            linux-firmware
+           lshw
            lsof
            man-db
            mediainfo
@@ -44,10 +48,12 @@ package_eniac-applications-meta() {
            mosh
            nano
            netctl
+           nfs-utils
            nvidia
            openssh
            p7zip
            pass
+           patch
            pwgen
            python
            rclone
@@ -58,6 +64,8 @@ package_eniac-applications-meta() {
            schedtool
            smartmontools
            strace
+           tcpdump
+           terminus-font
            time
            tmux
            tor
@@ -66,6 +74,8 @@ package_eniac-applications-meta() {
            unzip
            usbutils
            wget
+           which
+           whois
            xdelta3
            yay
            zip)
