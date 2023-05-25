@@ -3,7 +3,7 @@ pkgname=(eniac-applications-meta
          eniac-applications-x-meta
          eniac-applications-plasma-meta)
 pkgver=0.1
-pkgrel=10
+pkgrel=11
 arch=(any)
 
 package_eniac-applications-meta() {
@@ -54,6 +54,7 @@ package_eniac-applications-meta() {
            p7zip
            pass
            patch
+           pv
            pwgen
            python
            rclone
@@ -90,6 +91,7 @@ package_eniac-applications-x-meta() {
            libreoffice-still
            mpv
            rofi
+           tigervnc
            ttf-inconsolata
            ttf-indic-otf
            ttc-iosevka-ss04
