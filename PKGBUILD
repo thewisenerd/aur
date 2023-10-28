@@ -2,7 +2,7 @@ pkgbase=eniac-applications-meta
 pkgname=(eniac-applications-meta
          eniac-applications-x-meta
          eniac-applications-plasma-meta)
-pkgver=0.1
+pkgver=0.3
 pkgrel=13
 arch=(any)
 
@@ -128,6 +128,9 @@ package_eniac-applications-plasma-meta() {
            kdegraphics-thumbnailers
            okular
            kate
+
+           # extras?
+           kactivities5
 
            # printer
            print-manager
