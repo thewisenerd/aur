@@ -2,11 +2,13 @@ pkgbase=eniac-applications-meta
 pkgname=(eniac-applications-meta
          eniac-applications-x-meta
          eniac-applications-plasma-meta)
-pkgver=0.3
-pkgrel=13
+pkgver=0.4
+pkgrel=14
 arch=(any)
 
 package_eniac-applications-meta() {
+  provides=(linux linux-headers nvidia)
+  conflicts=(linux linux-headers nvidia)
   depends=(amd-ucode
            android-tools
            android-udev
@@ -38,8 +40,8 @@ package_eniac-applications-meta() {
            iperf3
            iptraf-ng
            jq
-           linux
-           linux-headers
+           linux-lts
+           linux-lts-headers
            linux-firmware
            lshw
            lsof
@@ -50,7 +52,7 @@ package_eniac-applications-meta() {
            nano
            netctl
            nfs-utils
-           nvidia
+           nvidia-lts
            openssh
            p7zip
            pass
