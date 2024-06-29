@@ -3,7 +3,7 @@ pkgname=(eniac-applications-meta
          eniac-applications-x-meta
          eniac-applications-plasma-meta)
 pkgver=0.4
-pkgrel=14
+pkgrel=15
 arch=(any)
 
 package_eniac-applications-meta() {
@@ -60,6 +60,7 @@ package_eniac-applications-meta() {
            pv
            pwgen
            python
+           qemu-full
            rclone
            refind
            repo
