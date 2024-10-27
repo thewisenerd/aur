@@ -3,7 +3,7 @@ pkgname=(eniac-applications-meta
          eniac-applications-x-meta
          eniac-applications-plasma-meta)
 pkgver=0.4
-pkgrel=15
+pkgrel=16
 arch=(any)
 
 package_eniac-applications-meta() {
@@ -17,6 +17,7 @@ package_eniac-applications-meta() {
            bind-tools
            binwalk
            ccache
+           cdrtools
            colordiff
            cpio
            dos2unix
@@ -31,15 +32,20 @@ package_eniac-applications-meta() {
            fzf
            git
            go
+           gron
+           haproxy
            hashdeep
            hddtemp
            hdparm
+           helm
            htop
            inetutils
            iotop
            iperf3
            iptraf-ng
            jq
+           kubectl
+           kubectx
            linux-lts
            linux-lts-headers
            linux-firmware
@@ -50,11 +56,15 @@ package_eniac-applications-meta() {
            mktorrent
            mosh
            nano
+           ncdu
            netctl
            nfs-utils
+           nodejs
+           npm
            nvidia-lts
            openssh
            p7zip
+           pandoc-bin
            pass
            patch
            pv
@@ -62,12 +72,15 @@ package_eniac-applications-meta() {
            python
            qemu-full
            rclone
+           redis
            refind
            repo
            ripgrep
            rsync
            schedtool
            smartmontools
+           sops
+           stern
            strace
            tcpdump
            terminus-font
@@ -89,19 +102,23 @@ package_eniac-applications-meta() {
 
 package_eniac-applications-x-meta() {
   depends=(adobe-source-han-serif-otc-fonts
-           alacritty
+           atuin
            chromium
            firefox
            gimp
            libreoffice-still
            mpv
+           otf-libertinus
            rofi
+           spotify
            tigervnc
            ttf-inconsolata
            ttf-indic-otf
            ttc-iosevka-ss04
            vlc
+           wezterm
            xbindkeys
+           xcape
            xclip
            xmonad
            xmonad-contrib
@@ -131,6 +148,7 @@ package_eniac-applications-plasma-meta() {
            kdegraphics-thumbnailers
            okular
            kate
+           spectacle
 
            # extras?
            kactivities5
